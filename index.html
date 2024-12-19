@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>TodoList</title>
     <link rel="shortcut icon" href="img/todoListFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div id="app">
@@ -28,9 +29,14 @@
             <!--alterar o formulário de autenticação para o cadastro de novas contas-->
             <p id="register">
                 Não possui uma conta?
-                <butto onclick="toggleRegister()">Cadastrar uma nova conta</button>
+                <button onclick="toggleRegister()" class="alternative">Cadastrar uma nova conta</button>
             </p>
 
+             <!--alterar o formulário de autenticação para o acesso de contas já existentes-->
+             <p id="register" class="startHidden">
+               Já possui uma conta?
+                <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
+            </p>
         </div>
 
     </div>
